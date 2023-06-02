@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 #importing data from csv to dataframe
-movie_data = pd.read_csv('/content/drive/MyDrive/Recommender_data/movies.csv')
+movie_data = pd.read_csv('Cine_genius/Recommender/movies.csv')
 selected_attr = ['budget','genres','keywords','original_language','original_title','popularity','vote_average','vote_count','cast','director']
 #We fill in any null values present in the data
 for attr in selected_attr:
