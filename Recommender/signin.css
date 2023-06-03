@@ -11,9 +11,26 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(300deg, #6b79a2, #6e8bda, #255af8);
+  background: linear-gradient(400deg, #6b79a2, #6e8bda, #255af8 ,#191970);
   animation: gradient-animation 10s ease infinite;
 }
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 33%;
+    }
+    33%{
+        background-position: 33% 66%;
+
+    }
+    66% {
+      background-position: 66% 100%;
+    }
+
+    100% {
+      background-position: 0% 30%;
+    }
+  }
 .wrapper{
   position: relative;
   max-width: 430px;
@@ -95,14 +112,3 @@ form .text h3 a{
 form .text h3 a:hover{
   text-decoration: underline;
 }
-@keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
