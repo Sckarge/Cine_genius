@@ -4,13 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
 }
 body{
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #4070f4;
+  background: linear-gradient(300deg, #6b79a2, #6e8bda, #255af8);
+  animation: gradient-animation 10s ease infinite;
 }
 .wrapper{
   position: relative;
@@ -93,3 +95,14 @@ form .text h3 a{
 form .text h3 a:hover{
   text-decoration: underline;
 }
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
